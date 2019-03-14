@@ -1,0 +1,144 @@
+def test():
+#     this is my first python code
+    return "Hello world"
+    
+print(test())
+
+6 ** 2
+
+
+
+a = 1
+b = 5
+c = 7
+sum([a,b,c])
+
+
+# 輸入第一個數，並轉型為int
+a = int(input("first num:"))
+
+# 輸入第二個數，並轉型為int
+b = int(input("second num:"))
+
+# 進行四則運算
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+
+
+
+# 輸入第一個數，並轉型為int
+a = int(input("first num:"))
+
+# 輸入第二個數，並轉型為int
+b = int(input("second num:"))
+
+# 輸入第三個運算子
+op = input("operator:")
+
+if op == "+":
+    print(a+b)
+
+elif op == "-":
+    print(a-b)
+
+elif op == "*":
+    print(a*b)
+
+elif op == "/":
+    print(a/b)
+
+else:
+    print("操作錯誤")
+    
+    
+    
+    
+if a==b:
+#     true condition, remember to indent with tab
+    print("a is the same as b")
+
+else:
+    print("a is different from b")
+    
+    
+for i in range(0, 10, 2):
+    print(i)
+    
+    
+a = int(input("Enter your number:"))
+
+for i in range(1,10):
+    print(a * i)
+    
+for i in range(1,10):
+    for j in range(1, 10):
+        print(i * j)
+        
+        
+answer = 10
+chance = 3
+
+for i in range(chance):
+    num = int(input("Please enter your num:"))
+    if num == answer:
+        print("bingo!!")
+        break
+    
+    elif num > answer:
+        print("lower")
+
+    elif num < answer:
+        print("upper")
+if num != answer:
+    print("猜錯了GG")
+    
+    
+    
+    
+    
+numbers = [1, 2, 3, 4, 5, 6]
+
+numbers.pop()
+numbers
+numbers.remove(4)
+
+numbers.extend(numbers)
+numbers
+
+a = []
+for i in range(10):
+    a.append(i)
+print(a)
+
+for i in range(5):
+    str = ""
+    for j in range(i):
+        str += "*"
+    print(str)
+    
+a = a + [1]
+a = [i for i in range(10)]
+print(a)
+
+my_list = [1, 2, 3, 4, 5]
+for i in range(len(my_list)):
+    print(my_list[i])
+    
+for element in my_list:
+    print(element)
+    
+my_dict = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+for key, val in my_dict.items():
+    print(key)
+    print(val)
+    
+    
+grades = [10, 30, 50, 70, 90]
+new_gra = [i**0.5*10 for i in grades]
+print(new_gra)
+
+
+print(sum(grades)/5)
+print(sum(new_gra)/5)
