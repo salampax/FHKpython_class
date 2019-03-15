@@ -1,0 +1,108 @@
+a = 0
+while a < 10:
+    print(a)
+    a = a + 1
+print(a)
+
+
+for i in range(0, 10, 2): // 0, 2, 4, 6, 8
+    print(i)
+    
+num = int(input())
+
+for i in range(1, 10):
+    print(num * i)
+    
+
+a = [1, 2, 3, 4]
+b = a[:]
+print(b)
+
+
+
+a = [[1,2], [5,6]]
+b = a[0][0]
+print(b)
+
+
+
+a = [1, 2, 3]
+a.append(5)
+print(a)
+
+
+
+a.remove(3)
+print(a)
+
+
+
+a = [1, 2, 3, 2]
+a.remove(2)
+print(a)
+
+
+
+a = [i for i in range(10)]
+print(a)
+
+
+
+print(len(a))
+
+
+for i in range(len(a)):
+    a[i] = a[i] * 2
+print(a)
+    
+    
+    
+    
+for e in a:
+    print(e)
+    
+    
+    
+list = [1,2,2,3]
+while 2 in list:
+    list.remove(2)
+print(list)
+
+
+a = {
+    "uid": 5,
+    "nid": 6
+}
+
+print(a["uid"])
+
+
+
+diction = {"a": 1, "b": 2, "c": 3}
+print(diction)
+
+
+for i, j in diction.items():
+    print(j)
+    
+    
+    
+b = diction["a"] 
+c = b + 1
+
+
+
+#字串反轉
+a = "apple"
+
+def reverse(string):
+    result = string
+    for c in string:
+        result = c + result
+    return result
+
+k = reverse(a)
+print(k)
+
+
+
