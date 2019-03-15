@@ -1,0 +1,190 @@
+a = "My name is Roger."
+print(a[0])
+print(a[3:7])
+
+
+for c in a:
+    print(c)
+    
+    
+str1 = "abc"
+str2 = "def"
+new_str = str1 + str2
+print(new_str)
+
+
+a = 5566
+b = "I love " + str(a)
+print(b)
+
+
+a = "Hello\nWorld"
+print(a)
+
+
+a = "I am a good student."
+b = a.split(" ")
+print(b)
+
+
+a = "Hi, nice to meet you."
+b = a.replace("i", "o")
+print(b)
+
+
+for i in range(10):
+    content = ""
+    for j in range(i+1):
+        content += "*"
+    print(content)
+    
+    
+for i in range(10):
+    content = ""
+    for k in range(9-i):
+        content += " "
+    for j in range(1+2*i):
+        content += "*"
+    print(content)
+    
+    
+print("吃飯")
+print("睡覺")
+print("打東東")
+
+
+
+def routine():
+    print("吃飯")
+    print("睡覺")
+    print("打東東")
+    
+routine()
+    
+    
+    
+def threeNumberSum(a, b, c=0):
+    result = a + b + c
+    return result
+
+a = 10
+b = 5
+c = 7
+
+print(threeNumberSum(a, b))
+print(threeNumberSum(a, b, c))
+
+
+
+
+
+def reverse(a):
+    new_a = ""
+    for c in a:
+        new_a = c + new_a
+    return new_a
+    
+    
+    
+s = "apple"
+b = reverse(s)
+print(s)
+print(b)
+
+
+class Rectangle:
+
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+    
+    def getLength(self):
+        return self.length
+    
+    def getWidth(self):
+        return self.width
+    
+    def getArea(self):
+        return self.width * self.length
+        
+        
+        
+rec = Rectangle(10, 8)
+
+print(rec.getLength())
+print(rec.getWidth())
+print(rec.getArea())
+
+
+
+class Triangle:
+
+    def __init__(self, bottom, height):
+        self.bottom = bottom
+        self.height = height
+    
+    def getBottom(self):
+        return self.bottom
+    
+    def getHeight(self):
+        return self.height
+    
+    def getArea(self):
+        return self.bottom * self.height / 2
+        
+        
+        
+class Trapezoid(Triangle):
+    def __init__(self, top, bottom, height):
+        self.top = top
+        self.bottom = bottom
+        self.height = height
+        
+    def getTop(self):
+        return self.top
+
+    def getArea(self):
+        return (self.top + self.bottom) * self.height / 2
+    
+    
+    
+    
+t = Trapezoid(10, 20 , 5)
+
+print(t.getBottom())
+print(t.getArea())
+
+
+
+a = Rectangle(10, 8)
+b = Triangle(10, 8)
+c = Trapezoid(10, 8, 4)
+
+shape_list = [a, b, c]
+for shape in shape_list:
+    print(shape.getArea())
+    
+    
+    
+for i in range(10, 0, -1):
+    print(i)
+    
+    
+    
+class Rectangle:
+
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+    
+    def getLength(self):
+        return self.length
+    
+    def getWidth(self):
+        return self.width
+    
+    def getArea(self):
+        return self.width * self.length
+
+rec = Rectangle(10,8)
+print(rec.getLength())
